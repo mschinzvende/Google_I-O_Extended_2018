@@ -65,9 +65,29 @@ Download the latest source archive for OpenCV 3.3 from <a href="https://github.c
 
 <code> wget https://github.com/opencv/opencv/archive/3.3.0.zip </code><br>
 
-After the download has finished run:
+After the download has unpack the zip file finished run:
 
 <code> unzip 3.3.0.zip </code><br>
+enter the unpacked directory:
+<code> cd opencv-3.3.0 </code><br>
+
+Inside the unpacked directory execute:
+<code> mkdir build </code><br>
+<code> cd build <code><br>
+
+<code> cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D FORCE_VTK=ON -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" -D WITH_GDAL=ON -D WITH_XINE=ON -D BUILD_EXAMPLES=ON .. </code><br>
+
+<code> make -j $(($(nproc) + 1)) </code><br>
+
+You have completed the build proceedure. To install OpenCv execute:
+
+<code> make install </code><br>
+<code> /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' </code><br>
+<code> ldconfig </code><br>
+<code> apt-get update </code><br>
+
+You have installed the OpenCv library. Now reboot your system.
+
 
 
 
