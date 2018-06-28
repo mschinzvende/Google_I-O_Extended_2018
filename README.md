@@ -7,7 +7,7 @@ In order to recognise vaious objects in a video, we will make use of pre-trainne
 In-order to succssefully run this tutorial, you need to have the following in place:
 
 1. Ubuntu 16.04 LTS
-2. TensorFlow
+2. TensorFlow - CPU Version
 3. OpenCv
 4. Python3.x
 
@@ -34,6 +34,8 @@ Make sure the correct python3 packages are installed
 Install TensorFlow
 <code>pi3 install tensorflow</code>
 
+To install Tensorflow on a GPU or another OS, refer to the <a href="https://www.tensorflow.org/install/">official installation guide</a>
+
 Verify that tensorflow has been successfully installed
 
 <code> python3</code><br>
@@ -46,7 +48,26 @@ If you don't get an import error, it means that TensorFlow has been successfully
 
 If this does not work, you need to <a href="https://www.tensorflow.org/install/install_sources">build TensorFlow from source</a>.
 
-The next step is to install the OpenCv library (OpenCv 3.3). I prefer building OpenCv from source because the pip installation presented some troubles when working with TensorFlow. To build OpenCv from source, you do the following:
+The next step is to install the OpenCv library (OpenCv 3.3). I prefer building OpenCv from source because the pip installation presented some troubles when working with TensorFlow. To build OpenCv from source, you run the following:
+
+
+<code> apt-get install --assume-yes build-essential cmake git </code><br>
+<code> apt-get install --assume-yes pkg-config unzip ffmpeg qtbase5-dev python-dev python3-dev python-numpy python3-numpy</code><br>
+<code> apt-get install --assume-yes libopencv-dev libgtk-3-dev libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev</code><br>
+<code> apt-get install --assume-yes libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev </code><br>
+<code> apt-get install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev </code><br>
+<code> apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils vtk6 </code><br>
+<code> apt-get install --assume-yes liblapacke-dev libopenblas-dev libgdal-dev checkinstall </code><br>
+
+To install OpenCv for GPU Support you need to install the NVIDIA Cuda Toolkit with CUDNN library, see <a href="https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-Installation-Guide#the-gpu-support-prerequisites"> the guide </a>
+
+Download the latest source archive for OpenCV 3.3 from <a href="https://github.com/opencv/opencv/archive/3.3.0.zip">here</a> or run the following command:
+
+<code> wget https://github.com/opencv/opencv/archive/3.3.0.zip </code><br>
+
+After the download has finished run:
+
+<code> unzip 3.3.0.zip </code><br>
 
 
 
