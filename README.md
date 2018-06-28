@@ -90,6 +90,11 @@ then
 
 You have installed the OpenCv library. Now reboot your system.
 
+Now we need to install some packages that we might need to run our sample program:
+
+<code> pip3 install matplotlib </code><br>
+<code> pip3 install imutils </code><br>
+
 
 
 
