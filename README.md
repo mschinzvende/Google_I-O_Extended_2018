@@ -81,7 +81,7 @@ Inside the unpacked directory execute:
 
 You have completed the build proceedure. To install OpenCv execute:<br>
 
-<code> make install </code><br>
+<code> make install </code><br> then
 <code> /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' </code><br>
 then
 <code> ldconfig </code><br>
