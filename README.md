@@ -13,3 +13,8 @@ In-order to succssefully run this tutorial, you need to have the following in pl
 
 These requirements constitute the prefered environment to run the tutorial. You can be able to run the tutorial using any other versions of the software, different from what is outlined.
 
+The goal of this tutorial is to show you how you can use the TensorFlow framework in a real life situation. Hopefully you will be able to grasp one or two concepts then you build from there.
+
+Let us begin
+
+After installing your linux environment (Ubuntu 16.04 LTS) 
