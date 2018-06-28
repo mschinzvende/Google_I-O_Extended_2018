@@ -17,4 +17,41 @@ The goal of this tutorial is to show you how you can use the TensorFlow framewor
 
 Let us begin
 
-After installing your linux environment (Ubuntu 16.04 LTS) 
+After installing your linux environment (Ubuntu 16.04 LTS), Open the terminal (CTRL+ALT+T) and run the following commands as the root user.
+
+<code>sudo -i</code>
+
+Running the comands as root, execute the following:
+
+<code>apt-get update</code><br>
+<code>apt-get dist-upgrade</code>
+
+Make sure the correct python3 packages are installed
+
+<code> apt-get install python3</code><br>
+<code> apt-get install python3-pip</code>
+
+Install TensorFlow
+<code>pi3 install tensorflow</code>
+
+Verify that tensorflow has been successfully installed
+
+<code> python3</code><br>
+<code>>>import tensorflow as tf</code><br>
+
+If you don't get an import error, it means that TensorFlow has been successfully installed. If you get the <code>Illegal instruction</code> error, try downgrading your TensorFlow to version 1.5.
+
+<code> pip3 unistall tensorflow</code><br>
+<code> pip3 install tensorflow==1.5</code>
+
+If this does not work, you need to <a href="https://www.tensorflow.org/install/install_sources">build TensorFlow from source</a>.
+
+The next step is to install the OpenCv library (OpenCv 3.3). I prefer building OpenCv from source because the pip installation presented some troubles when working with TensorFlow. To build OpenCv from source, you do the following:
+
+
+
+
+
+
+
+
