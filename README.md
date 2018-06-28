@@ -79,7 +79,7 @@ Inside the unpacked directory execute:
 
 <code> make -j $(($(nproc) + 1)) </code><br>
 
-You have completed the build proceedure. To install OpenCv execute:
+You have completed the build proceedure. To install OpenCv execute:<br>
 
 <code> make install </code><br>
 <code> /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' </code><br>
