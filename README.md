@@ -2,7 +2,7 @@
 Object Classification in video using TensorFlow &amp; OpenCv
 
 This tutorial will focus on how you can detect various objects in a video stream, either live or pre-recorded, using the TensorFlow Object Detection Library.
-In order to recognise vaious objects in a video, we will make use of pre-trainned models available in the <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">TensorFlow Model Zoo</a>
+In order to recognise various objects in a video, we will make use of pre-trainned models available in the <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">TensorFlow Model Zoo</a>
 
 You can get the source code for this tutorial <a href="https://drive.google.com/open?id=1rUrw5Xc_zdmvXnAwDk3Fe4jCpNSAtcpc"> HERE </a>
 
